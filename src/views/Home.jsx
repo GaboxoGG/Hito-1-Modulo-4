@@ -1,24 +1,27 @@
 import Header from "../components/Header";
 import CardPizza from "../components/CardPizza";
+import napolitanaImg from "../assets/Napoli.png";
+import espanolaImg from "../assets/Espanola.png";
+import pepperoniImg from "../assets/Peppe.png";
 
 const pizzas = [
   {
     name: "Pizza Napolitana",
     price: 5950,
     ingredients: ["mozzarella", "tomates", "jamón", "orégano"],
-    img: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
+    img: napolitanaImg,
   },
   {
     name: "Pizza Española",
     price: 6950,
     ingredients: ["mozzarella", "gorgonzola", "parmesano", "provolone"],
-    img: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
+    img: espanolaImg,
   },
   {
     name: "Pizza Pepperoni",
     price: 6950,
     ingredients: ["mozzarella", "pepperoni", "orégano"],
-    img: "https://images.unsplash.com/photo-1594007654729-407eedc4be65",
+    img: pepperoniImg,
   },
 ];
 

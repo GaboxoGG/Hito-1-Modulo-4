@@ -1,8 +1,9 @@
 import headerImg from "../assets/header.jpg";
+
 const Header = () => {
   return (
     <header
-      className="text-white text-center py-5"
+      className="text-white text-center"
       style={{
         backgroundImage: `url(${headerImg})`,
         backgroundSize: "cover",

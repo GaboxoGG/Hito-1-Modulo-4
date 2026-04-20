@@ -1,9 +1,12 @@
 const CardPizza = ({ name, price, ingredients, img }) => {
   return (
-    <div className="col-md-4">
+    <div className="col-md-4 d-flex">
       <div className="card shadow-sm h-100">
 
-        <img src={img} className="card-img-top" alt={name} />
+        <img src={img} className="card-img-top" alt={name} style={{
+          height: "200px",
+          objectFit: "cover"
+        }} />
 
         <div className="card-body text-center">
           <h5 className="card-title">{name}</h5>
