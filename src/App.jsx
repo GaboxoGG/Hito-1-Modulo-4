@@ -6,6 +6,10 @@ import Home from "./views/Home";
 import LoginPage from "./views/LoginPage";
 import RegisterPage from "./views/RegisterPage";
 
+import Cart from "./views/Cart";
+
+
+
 function App() {
   const [view, setView] = useState("home");
 
@@ -16,6 +20,7 @@ function App() {
       {view === "home" && <Home />}
       {view === "login" && <LoginPage />}
       {view === "register" && <RegisterPage />}
+      {view === "cart" && <Cart />}
 
       <Footer />
     </>

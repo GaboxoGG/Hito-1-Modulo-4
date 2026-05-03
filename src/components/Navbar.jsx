@@ -53,8 +53,11 @@ const Navbar = ({ setView }) => {
 
         {/* DERECHA */}
         <div>
-          <button className="btn btn-info btn-sm">
-            🛒 Total: ${total.toLocaleString()}
+          <button
+           className="btn btn-info btn-sm"
+           onClick={() => setView("cart")}
+          >
+           🛒 Total: ${total.toLocaleString()}
           </button>
         </div>
 
