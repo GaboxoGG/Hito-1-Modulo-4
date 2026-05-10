@@ -8,6 +8,7 @@ import RegisterPage from "./views/RegisterPage";
 
 import Cart from "./views/Cart";
 
+import Pizza from "./views/Pizza";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       {view === "login" && <LoginPage />}
       {view === "register" && <RegisterPage />}
       {view === "cart" && <Cart />}
+      {view === "pizza" && <Pizza />}
 
       <Footer />
     </>

@@ -4,12 +4,13 @@ const Navbar = ({ setView }) => {
 
   return (
     <nav className="navbar navbar-dark bg-dark px-4">
-      <div className="container-fluid d-flex justify-content-between">
+      <div className="container-fluid d-flex justify-content-between align-items-center">
 
         {/* IZQUIERDA */}
-        <div className="d-flex align-items-center gap-3">
+        <div className="d-flex align-items-center gap-2 flex-wrap">
+
           <span
-            className="navbar-brand mb-0 h5"
+            className="navbar-brand mb-0 h5 me-3"
             style={{ cursor: "pointer" }}
             onClick={() => setView("home")}
           >
@@ -23,11 +24,19 @@ const Navbar = ({ setView }) => {
             🍕 Inicio
           </button>
 
+          <button
+            className="btn btn-outline-light btn-sm"
+            onClick={() => setView("pizza")}
+          >
+            👀 Pizza
+          </button>
+
           {token ? (
             <>
               <button className="btn btn-outline-light btn-sm">
                 🔓 Profile
               </button>
+
               <button className="btn btn-outline-light btn-sm">
                 🔓 Logout
               </button>
@@ -54,10 +63,10 @@ const Navbar = ({ setView }) => {
         {/* DERECHA */}
         <div>
           <button
-           className="btn btn-info btn-sm"
-           onClick={() => setView("cart")}
+            className="btn btn-info btn-sm"
+            onClick={() => setView("cart")}
           >
-           🛒 Total: ${total.toLocaleString()}
+            🛒 Total: ${total.toLocaleString()}
           </button>
         </div>
 
